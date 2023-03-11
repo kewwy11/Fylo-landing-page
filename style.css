@@ -238,20 +238,21 @@ footer{
     left: -8px;
     bottom: -700px;
     width: 100%;
-    padding: 0 50px;
+    padding: 0 100px;
     height: 400px;
 }
 
 .logo{
     width: 190px;
     height: 52px;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .contents{
     display: flex;
     align-items: center;
     gap: 60px;
+    margin-top: -20px;
 }
 
 .location{
@@ -282,7 +283,7 @@ footer{
 
 .link1 ul li{
     list-style: none;
-    padding: 4px 0;
+    padding: 10px 0;
 }
 
 .link1 ul li a{
@@ -292,7 +293,7 @@ footer{
 
 .link2 ul li{
     list-style: none;
-    padding: 4px 0;
+    padding: 10px 0;
 }
 
 .link2 ul li a{
