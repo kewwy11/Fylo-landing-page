@@ -339,7 +339,7 @@ footer {
 
 /* Mobile 375px */
 
-@media (max-width: 375px) {
+@media (max-width: 585px) {
   html {
     font-size: 10px;
   }
