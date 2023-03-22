@@ -19,7 +19,7 @@
   --white: hsl(0, 0%, 100%);
 }
 
-html {
+body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -27,6 +27,11 @@ html {
   scroll-behavior: smooth;
   color: var(--white);
   background: var(--main-bg);
+}
+
+body.active{
+  background-color: #fff;
+  color: var(--intro-email-bg);
 }
 
 h2,
@@ -62,13 +67,18 @@ main {
 
 /* nav style */
 
-.nav {
+.nav{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 73px 80px;
   background: var(--intro-email-bg);
+}
+
+.nav.active{
+  background: var(--white);
+  color: var(--intro-email-bg);
 }
 
 .nav-items {
@@ -80,6 +90,25 @@ main {
   padding-right: 56px;
 }
 
+.nav-link{
+  font-size: 16px;
+}
+
+.nav.active a{
+  color: var(--intro-email-bg);
+}
+
+.nav.active a:hover{
+  color: var(--blue);
+}
+
+.mode{
+  font-size: 16px;
+}
+
+.mode:hover{
+  color: hsl(176, 68%, 64%);
+}
 /* hero section */
 .hero {
   display: flex;
@@ -337,7 +366,7 @@ footer {
     color: var(--cyan);
 }
 
-/* Mobile 375px */
+/* Mobile 585px */
 
 @media (max-width: 585px) {
   html {
