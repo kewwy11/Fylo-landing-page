@@ -27,13 +27,11 @@ body {
   scroll-behavior: smooth;
   color: var(--white);
   background: var(--main-bg);
-  transition: 0.5s all ease-in;
 }
 
 body.active{
   background-color: #fff;
   color: var(--intro-email-bg);
-  transition: 0.5s all ease-in;
 }
 
 h2,
@@ -321,7 +319,7 @@ footer {
   grid-template-rows: auto;
   column-gap: 70px;
   grid-template-areas:
-    "logo . . . ."
+    "logo . . . ." 
     "location  contact links more-links social-icons";
 }
 
@@ -402,7 +400,7 @@ footer.active i{
 /* Mobile 585px */
 
 @media (max-width: 585px) {
-  html {
+  body {
     font-size: 10px;
   }
 
@@ -410,10 +408,22 @@ footer.active i{
     font-size: 25px;
   }
 
+  /* .nav-items{
+    display: none;
+  } */
+
   /* nav */
   .nav {
     padding: 24px 20px;
   }
+
+  .nav-link{
+    font-size: 13px;
+  }
+
+  .mode{
+    font-size: 13px;
+  } 
 
   .nav-items :not(:last-child) {
     padding-right: 23px;

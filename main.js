@@ -18,6 +18,7 @@ icon.addEventListener('click', () => {
     icon.classList.toggle('active')
     main.classList.toggle('active')
     changeLogo()
+    footerLogo()
     // links.forEach(link => link.classList.toggle('active'))
 
     if(icon.classList.contains('fa-sun')){
@@ -29,6 +30,15 @@ icon.addEventListener('click', () => {
 
 function changeLogo(){
     const img = document.getElementById('image')
+    if(img.src.match('./fylo-dark-theme-landing-page-master/images/logo.svg')){
+        img.src = 'fylologo2.png'
+    }else{
+        img.src = './fylo-dark-theme-landing-page-master/images/logo.svg'
+    }
+}
+
+function footerLogo(){
+    const img = document.getElementById('image2')
     if(img.src.match('./fylo-dark-theme-landing-page-master/images/logo.svg')){
         img.src = 'fylologo2.png'
     }else{
