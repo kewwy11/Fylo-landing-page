@@ -1,11 +1,12 @@
 const body = document.querySelector('body')
 const nav = document.querySelector('.nav')
 const hero = document.querySelector('.hero')
+const main = document.querySelector('.main')
 const testimonials = document.querySelector('.testimonials')
 const signUp = document.querySelector('.sign-up')
 const footer = document.querySelector('footer')
 const icon = document.querySelector('.mode')
-const links = document.querySelectorAll('li')
+
 
 icon.addEventListener('click', () => {
     body.classList.toggle('active')
@@ -15,7 +16,8 @@ icon.addEventListener('click', () => {
     signUp.classList.toggle('active')
     footer.classList.toggle('active')
     icon.classList.toggle('active')
-    links.classList.toggle('active')
+    main.classList.toggle('active')
+    changeLogo()
     // links.forEach(link => link.classList.toggle('active'))
 
     if(icon.classList.contains('fa-sun')){
@@ -24,6 +26,15 @@ icon.addEventListener('click', () => {
         icon.classList.replace('fa-moon', 'fa-sun')
     }
 })
+
+function changeLogo(){
+    const img = document.getElementById('image')
+    if(img.src.match('./fylo-dark-theme-landing-page-master/images/logo.svg')){
+        img.src = 'fylologo2.png'
+    }else{
+        img.src = './fylo-dark-theme-landing-page-master/images/logo.svg'
+    }
+}
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

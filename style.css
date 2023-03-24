@@ -27,11 +27,13 @@ body {
   scroll-behavior: smooth;
   color: var(--white);
   background: var(--main-bg);
+  transition: 0.5s all ease-in;
 }
 
 body.active{
   background-color: #fff;
   color: var(--intro-email-bg);
+  transition: 0.5s all ease-in;
 }
 
 h2,
@@ -63,6 +65,11 @@ h2 {
 main {
   position: relative;
   padding-bottom: 200px;
+  transition: 0.5s all ease-in;
+}
+
+main.active{
+  background-color: #e7e7e72c;
 }
 
 /* nav style */
@@ -122,6 +129,10 @@ main {
   background: var(--intro-email-bg) url("images/bg-curvy-desktop.svg") bottom
     no-repeat;
   background-size: 100% 270px;
+}
+
+.hero.active{
+  background: var(--white);
 }
 
 .hero img {
@@ -213,6 +224,11 @@ main {
   position: relative;
 }
 
+.testimonials.active .testimonial{
+  /* background: #f1f1f1ef; */
+  background: #eee;
+}
+
 .testimonial:first-child::before {
   content: url("images/bg-quotes.png");
   position: absolute;
@@ -257,6 +273,10 @@ main {
   padding: 50px 74px 40px 74px;
   border-radius: 5px;
   bottom: -155px;
+}
+
+.sign-up.active{
+  background: #eee;
 }
 
 .sign-up h2 {
@@ -305,6 +325,11 @@ footer {
     "location  contact links more-links social-icons";
 }
 
+footer.active{
+  background: #ccc;
+  color: var(--intro-email-bg);
+}
+
 .footer-logo {
   grid-area: logo;
   margin-bottom: 35px;
@@ -317,7 +342,7 @@ footer {
 }
 
 .footer-location span {
-  padding-left: 35px;
+  padding-left: 20px;
 }
 
 .footer-contact {
@@ -328,7 +353,7 @@ footer {
   margin-bottom: 26px;
 }
 
-.footer-contact img {
+.footer-contact .contact {
   margin-right: 24px;
 }
 
@@ -340,6 +365,10 @@ footer {
 
 .footer-links a {
   margin-bottom: 24px;
+}
+
+footer.active a{
+  color: var(--intro-email-bg);
 }
 
 .footer-more-links {
@@ -359,11 +388,15 @@ footer {
 }
 
 .social-icons i {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .social-icons i:hover{
     color: var(--cyan);
+}
+
+footer.active i{
+  color: var(--intro-email-bg);
 }
 
 /* Mobile 585px */
